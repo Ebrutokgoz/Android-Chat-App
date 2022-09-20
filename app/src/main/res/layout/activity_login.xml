@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+   <include
+       android:id="@+id/actionBarLogin"
+       layout="@layout/actionbar_app" />
+
+   <ImageView
+       android:id="@+id/icon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="100dp"
+       android:src="@drawable/icon" />
+   <TextView
+       android:id="@+id/textEmailLogin"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/email"
+       android:textSize="18sp"
+       android:layout_marginTop="50dp"
+       android:layout_marginStart="20dp"
+       android:layout_below="@+id/icon"
+
+       />
+   <EditText
+       android:id="@+id/editTextEmailLogin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textEmailLogin"
+       android:hint="E-posta"
+       android:inputType="textEmailAddress"
+       android:layout_marginTop="20dp"
+       android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+       />
+   <TextView
+       android:id="@+id/textPasswordLogin"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Parola:"
+       android:textSize="18sp"
+       android:layout_below="@+id/editTextEmailLogin"
+       android:layout_marginTop="20dp"
+       android:layout_marginStart="20dp"
+       />
+   <EditText
+       android:id="@+id/editTextPasswordLogin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textPasswordLogin"
+       android:hint="Parola"
+       android:inputType="textPassword"
+       android:layout_marginTop="20dp"
+       android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+       />
+
+   <Button
+       android:id="@+id/btnLogin"
+       android:layout_width="392dp"
+       android:layout_height="74dp"
+       android:background="@drawable/button_design"
+       android:layout_alignParentBottom="true"
+       android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginBottom="60dp"
+       android:text="Giriş" />
+
+
+   <TextView
+       android:id="@+id/createAccount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnLogin"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="-50dp"
+       android:onClick="goRegister"
+       android:text="@string/underlinedRegister"
+
+       android:textColor="@color/pink" />
+
+</RelativeLayout>

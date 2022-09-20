@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil_arka_plan"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/visitedUser_photoProfileActivity"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="210dp"
+        android:layout_height="210dp" />
+
+    <TextView
+        android:id="@+id/visitedUser_usernameProfileActivity"
+        android:textAlignment="center"
+        android:layout_below="@+id/visitedUser_photoProfileActivity"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Kullanıcı Adı"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/visitedUser_aboutProfileActivity"
+        android:textAlignment="center"
+        android:layout_below="@+id/visitedUser_usernameProfileActivity"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Hey artık bende whatsapptayım"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/sendRequestButton"
+        android:layout_below="@id/visitedUser_aboutProfileActivity"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Talebi Gönder"
+        android:background="@drawable/button_design"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/cancelRequestButton"
+        android:layout_below="@id/sendRequestButton"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Talebi İptal"
+        android:background="@drawable/button_design"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

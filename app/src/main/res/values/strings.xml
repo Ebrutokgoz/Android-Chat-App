@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChatApplication2</string>
+    <string name="create_new_account">YENİ HESAP OLUŞTUR</string>
+    <string name="have_an_account">HESABIM VAR</string>
+    <string name="username">Kullanıcı Adı:</string>
+    <string name="email">E-posta:</string>
+    <string name="password">Parola: (En az 6 karakterden oluşmalı)</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="underlinedLogin"><u>Hesabım Var</u></string>
+    <string name="underlinedRegister"><u>Yeni Hesap Oluştur</u></string>
+
+</resources>

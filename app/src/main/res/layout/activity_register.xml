@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/actionBarRegister"
+        layout="@layout/actionbar_app" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textUsernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/username"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextUsernameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textUsernameRegister"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Kullanıcı adı" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsernameRegister"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEmail"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:hint="E-posta"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmailRegister"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPasswordRegister"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Parola"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="392dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_design"
+        android:text="Kaydol" />
+
+    <TextView
+        android:id="@+id/haveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:onClick="goLogin"
+        android:text="@string/underlinedLogin"
+        android:textColor="@color/pink" />
+
+</RelativeLayout>
